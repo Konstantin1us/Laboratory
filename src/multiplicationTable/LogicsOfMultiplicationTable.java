@@ -1,10 +1,9 @@
-package multiplicationTable;
-
-public class LogicsOfMultiplicationTable extends InputNumber{
+public class LogicsOfMultiplicationTable{
     public void logics(){
-        if (getInp() > 0 & getInp() <= 32) {
+        InputNumber sss = new InputNumber();
+        if (sss.getInp() > 0 & sss.getInp() <= 32) {
             int counter = 1;
-            for (int i = 1; i <= getInp(); i++) {
+            for (int i = 1; i <= sss.getInp(); i++) {
                 if (i <= 9) {
                     System.out.print(i + "    ");
                 } else if (i > 9) {
@@ -12,9 +11,9 @@ public class LogicsOfMultiplicationTable extends InputNumber{
                 }
             }
             System.out.println();
-            while (counter != getInp()) {
+            while (counter != sss.getInp()) {
                 counter++;
-                for (int i = 1; i <= getInp(); i++) {
+                for (int i = 1; i <= sss.getInp(); i++) {
                     String str = Integer.toString(counter * i);
                     if (str.length() == 1) {
                         System.out.print(str + "    ");
